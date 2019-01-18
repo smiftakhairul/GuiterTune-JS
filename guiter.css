@@ -1,0 +1,59 @@
+body {
+  margin:0;
+  padding:0;
+  background: #222;
+  position: relative;
+}
+
+div.pp{
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+div.pp img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+div.quote{
+  position: absolute;
+  top: 70px;
+  font-size: 1.1em;
+  left: 160px;
+  color: #F1E7E6;
+}
+
+#tuner_container {width:40%;height:100vh;position:absolute;left:30%;}
+#tuner_pickups {width:100%;position:absolute;background:url("https://www.electricherald.com/tuner/Woods-BG.jpg");}
+#tuner_strings {width:100%;position:absolute;}
+
+
+.string-x {
+  cursor: default;
+  fill:#DDDDDD;
+  stroke:#000000;
+  stroke-width:0.1;
+  stroke-miterlimit:10;
+}
+.string {
+  cursor: pointer;
+  fill:rgba(0,0,0,0);
+  stroke:rgba(0,0,0,0);
+  stroke-width:24;
+  stroke-miterlimit:10;
+  -webkit-transition: all .1s ease;
+-moz-transition: all .1s ease;
+-ms-transition: all .1s ease;
+-o-transition: all .1s ease;
+transition: all .1s ease;
+}
+.string:hover {
+  fill:#FFFFFF;
+}
+.string:active {
+  fill:#FAFAFA;
+  stroke:green;
+  stroke-width:0.5;
+}
